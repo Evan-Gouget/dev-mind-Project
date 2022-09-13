@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConsoleGreetingService implements GreetingService{
 
-    public String name;
+    private String name;
 
     public void setName(String name) {
         this.name = name;
@@ -16,7 +16,6 @@ public class ConsoleGreetingService implements GreetingService{
     }
 
     public void greet(String name) {
-        setName(name);
-        System.out.println("Hello, " + getName() + "!");
+        System.out.println("Hello, " + name + "!");
     }
 }
