@@ -1,1 +1,3 @@
 rootProject.name = 'faircorp'
+include 'clevercloud'
+
